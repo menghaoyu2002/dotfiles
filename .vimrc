@@ -61,6 +61,10 @@ set number
 
 syntax on
 
+" YouCompleteMe Settings
+let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_autoclose_preview_window_after_completion = 1
+
 " Set theme
 set background=dark
 colorscheme onedark
