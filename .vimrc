@@ -51,6 +51,9 @@ nnoremap <C-b>h :bp<CR>
 nnoremap <C-b>l :bn<CR>
 nnoremap <C-b>b :ls<CR>
 
+" Close buffer 
+nnoremap <C-b>x :bd<CR>
+
 " NERDTree Keybinds
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
