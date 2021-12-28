@@ -24,8 +24,32 @@ filetype plugin indent on    " require
 
 " Custom Keybinds
 inoremap kj <ESC>
-" Map Ctrl-Backspace to delete the previous word in insert mode.
-inoremap <C-BS> <C-w>
+
+" open new splits at the bottom right
+set splitbelow
+set splitright
+
+" Split navigation
+nnoremap <C-j> <C-W><C-j>
+nnoremap <C-k> <C-W><C-k>
+nnoremap <C-l> <C-W><C-l>
+nnoremap <C-h> <C-W><C-h>
+
+" Split Resizing
+nnoremap <C-w><C-L> :vertical res -5<CR>
+nnoremap <C-w><C-H> :vertical res +5<CR>
+noremap <C-w><C-K> :res -5<CR>
+noremap <C-w><C-J> :res +5<CR>
+
+" Split rearranging
+nnoremap <C-r>l <C-w>r
+nnoremap <C-r>h <C-w>R
+nnoremap <C-r>e <C-w>x
+
+" Buffer navigation
+nnoremap <C-b>h :bp<CR>
+nnoremap <C-b>l :bn<CR>
+nnoremap <C-b>b :ls<CR>
 
 " NERDTree Keybinds
 nnoremap <C-t> :NERDTreeToggle<CR>
@@ -41,6 +65,7 @@ syntax on
 set background=dark
 colorscheme onedark
 let g:airline_theme='onedark'
+let g:airline#extensions#tabline#enabled = 1
 
 if exists('+termguicolors')
 	let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
