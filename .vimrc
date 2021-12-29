@@ -24,6 +24,10 @@ filetype plugin indent on    " required
 
 " Custom Keybinds
 inoremap kj <ESC>
+ 
+" Rebind undo to ctrl + z
+nnoremap <C-z> u
+inoremap <C-z> <C-o>u
 
 " open new splits at the bottom right
 set splitbelow
