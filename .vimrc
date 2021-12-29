@@ -20,7 +20,7 @@ Plugin 'ycm-core/YouCompleteMe'
 Plugin 'raimondi/delimitmate'
 
 call vundle#end()            " required
-filetype plugin indent on    " require
+filetype plugin indent on    " required
 
 " Custom Keybinds
 inoremap kj <ESC>
@@ -63,7 +63,6 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 
-set smartindent
 set number
 syntax on
 
