@@ -58,10 +58,13 @@ nnoremap <C-b>x :bd<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
-set ts=4 sw=4
-set autoindent
-set number
+" one tab is four spaces, don't @ me
+set expandtab
+set tabstop=4
+set shiftwidth=4
 
+set smartindent
+set number
 syntax on
 
 " YouCompleteMe Settings
